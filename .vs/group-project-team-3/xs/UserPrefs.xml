@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{2A5C8C14-628D-6D94-F538-75F8496761D3}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4a2168d0-ed5d-422f-907b-478a12264954" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SceneManager.cs">
+    <Files>
+      <File FileName="Assets/FPSController.cs" />
+      <File FileName="Assets/SceneManager.cs" Line="6" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="group-project-team-3" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="SceneManager.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
