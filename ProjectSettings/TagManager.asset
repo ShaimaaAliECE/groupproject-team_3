@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Plane
   - mainBullet
+  - Hoop
   layers:
   - Default
   - TransparentFX
