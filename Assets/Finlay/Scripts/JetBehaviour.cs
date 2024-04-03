@@ -8,7 +8,7 @@ public class JetBehaviour : MonoBehaviour
     public float health = 100f; // Set the initial health of the plane
 
     private bool controlsEnabled = true;
-    public float forwardSpeed = 10.0f;
+    public float forwardSpeed = 150.0f;
     public float pitchSpeed = 100.0f; // Speed of pitching up or down
     public float rollSpeed = 100.0f;  // Speed of rolling left or right
 
@@ -19,6 +19,8 @@ public class JetBehaviour : MonoBehaviour
 
     public GameObject fire;
 
+    public bool alive = true;
+
 
 
     void Start()
@@ -26,6 +28,7 @@ public class JetBehaviour : MonoBehaviour
         // Attempt to get the Rigidbody component
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        alive = true;
 
         // Check if Rigidbody component was found
         if (rb != null)
@@ -90,11 +93,11 @@ public class JetBehaviour : MonoBehaviour
             // Boost input
             if (Input.GetKeyDown(boostKey))
             {
-                forwardSpeed = 30.0f;
+                forwardSpeed *= 5;
             }
             if (Input.GetKeyUp(boostKey))
             {
-                forwardSpeed = 10.0f;
+                forwardSpeed /= 5;
             }
         }
     }
@@ -119,6 +122,7 @@ public class JetBehaviour : MonoBehaviour
 
     public void DestroyPlane()
     {
+        alive = false;
         // Here you can add an explosion effect or sound if you want
         controlsEnabled = false;
         // Stop forward movement
