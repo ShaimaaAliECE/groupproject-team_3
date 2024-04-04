@@ -4849,6 +4849,7 @@ GameObject:
   - component: {fileID: 457454}
   - component: {fileID: -3311750887569657037}
   - component: {fileID: -1146187228029493788}
+  - component: {fileID: 3554655583751338289}
   m_Layer: 6
   m_Name: CruiseFighter (Shiny Silver)
   m_TagString: Plane
@@ -4891,6 +4892,10 @@ MonoBehaviour:
   forwardSpeed: 10
   pitchSpeed: 100
   rollSpeed: 100
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
+  fire: {fileID: 1901245927194888, guid: bb98861c48ad2024ca93498c7dd93a6c, type: 3}
 --- !u!65 &-1146187228029493788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4912,6 +4917,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3554655583751338289
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134156}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &174976
 GameObject:
   m_ObjectHideFlags: 0

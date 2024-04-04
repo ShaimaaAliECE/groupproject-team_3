@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{3B92B011-DCCB-E03F-446D-47A549CF5FA9}|">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Finlay/Scripts/JetBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Finlay/Scripts/BeamBehaviour.cs">
     <Files>
       <File FileName="Assets/Shahed/SwitchScenes.cs" />
       <File FileName="Assets/Shahed/LevelInitializer.cs" />
       <File FileName="Assets/Shahed/PersistentData.cs" />
       <File FileName="Assets/AliE/Scripts/WeaponBehaviour.cs" />
-      <File FileName="Assets/AliE/Scripts/EnemyBehaviour.cs" />
-      <File FileName="Assets/Finlay/Scripts/JetBehaviour.cs" Line="77" Column="55" />
-      <File FileName="Assets/Finlay/Scripts/BeamBehaviour.cs" />
-      <File FileName="Assets/Assets/CyberneticWalrus/Factory_Interior/Prefabs/Air_Duct_01_Corner_02_Prefab_01.prefab" />
-      <File FileName="Assets/Finlay/Scripts/Hoop.cs" Line="15" Column="2" />
-      <File FileName="Assets/Finlay/Scripts/HoopsManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/AliA/Scripts/PlayerMovement.cs" Line="19" Column="46" />
-      <File FileName="Assets/AliE/Scripts/TurretEnemyBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/AliE/Scripts/EnemyBehaviour.cs" Line="11" Column="31" />
+      <File FileName="Assets/Finlay/Scripts/JetBehaviour.cs" Line="31" Column="22" />
+      <File FileName="Assets/Finlay/Scripts/BeamBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Assets/CyberneticWalrus/Factory_Interior/Prefabs/Air_Duct_01_Corner_02_Prefab_01.prefab" Line="1" Column="1" />
+      <File FileName="Assets/Finlay/Scripts/Hoop.cs" Line="10" Column="36" />
+      <File FileName="Assets/Finlay/Scripts/HoopsManager.cs" Line="38" Column="6" />
+      <File FileName="Assets/AliA/Scripts/PlayerMovement.cs" />
+      <File FileName="Assets/AliE/Scripts/TurretEnemyBehaviour.cs" />
+      <File FileName="Assets/HUDscripts/Challenges.cs" Line="12" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,9 +27,17 @@
               <Node name="AliE" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Finlay" expanded="True">
-                <Node name="Scripts" expanded="True" />
+              <Node name="Assets" expanded="True">
+                <Node name="CyberneticWalrus" expanded="True">
+                  <Node name="Factory_Interior" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Finlay" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="BeamBehaviour.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="HUDscripts" expanded="True" />
               <Node name="Shahed" expanded="True" />
             </Node>
           </Node>
