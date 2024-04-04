@@ -53,14 +53,17 @@ public class TurretEnemyBehaviour : MonoBehaviour
         withinAttackRange = Physics.CheckSphere(transform.position, attackRange, playerMask);
 
 
-        if (withinSightRange && withinAttackRange && alive )
+        if (withinSightRange && withinAttackRange)
         {
-            
+            Debug.Log("we here baby");
             EnemyAttack();
         }
 
-        Debug.Log(health);
-       
+        if(health < 0)
+        {
+            alive = false;
+            transform.LookAt(ground);
+        }
 
     }
 
@@ -110,7 +113,7 @@ public class TurretEnemyBehaviour : MonoBehaviour
         //agent.SetDestination(transform.position);
         transform.LookAt(playerTransform);
 
-        if (!attackOccured )
+        if (!attackOccured && alive)
         {
             Shoot();
             attackOccured = true;
@@ -126,7 +129,7 @@ public class TurretEnemyBehaviour : MonoBehaviour
 
     private void Shoot()
     {
-        
+        Debug.Log("shoot that boy");
         Vector3 rayOrigin = transform.position;
         Vector3 rayDirection = (playerTransform.position - rayOrigin).normalized;
 
@@ -168,15 +171,8 @@ public class TurretEnemyBehaviour : MonoBehaviour
         Debug.Log("here");
         if (collision.gameObject.tag == "mainBullet")
         {
-            Debug.Log("the health is decreasing"+health);
+            Debug.Log("Here");
             health = health - 50;
-        }
-
-        if (health <= 0)
-        {
-            Debug.Log(health);
-            alive = false;
-            transform.LookAt(ground);
         }
     }
 
