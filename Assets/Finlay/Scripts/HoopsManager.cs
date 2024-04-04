@@ -32,9 +32,17 @@ public class HoopsManager : MonoBehaviour
         // Check if the passed hoop is the next one in the sequence
         if (hoops[currentHoopIndex] == hoop)
         {
-            currentHoopIndex++; // Correct hoop passed, move to the next one
+            currentHoopIndex++;
         }
-        // Removed the else block that destroys the plane
+        else
+        {
+            // If not, the player has missed a hoop
+            JetBehaviour playerPlane = FindObjectOfType<JetBehaviour>();
+            if (playerPlane != null)
+            {
+                playerPlane.DestroyPlane();
+            }
+        }
     }
 
     public GameObject GetCurrentHoop()
