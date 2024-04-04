@@ -7,7 +7,7 @@ TagManager:
   - CinemachineTarget
   - Plane
   - mainBullet
-  - Hoop
+  - enemyBullet
   layers:
   - Default
   - TransparentFX
@@ -20,8 +20,8 @@ TagManager:
   - bulletMask
   - enemyMask
   - mainBullet
-  - 
-  - 
+  - turretMask
+  - gun
   - 
   - 
   - 
